@@ -142,7 +142,8 @@ class Purchases {
           'useAmazon': purchasesConfiguration.store == Store.amazon,
           'usesStoreKit2IfAvailable':
               // ignore: deprecated_member_use_from_same_package
-              purchasesConfiguration.usesStoreKit2IfAvailable
+              purchasesConfiguration.usesStoreKit2IfAvailable,
+          'entitlementVerificationMode': purchasesConfiguration.entitlementVerificationMode.toString()
         },
       );
 
